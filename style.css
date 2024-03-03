@@ -1,0 +1,60 @@
+html {
+    background-image: url(BG4.jpg);
+    background-size: 100%;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 20px;
+}
+form {
+    background-color: whitesmoke;
+    display: inline-block;
+    text-align: left;
+    padding: 25px;
+    border-radius: 90px;
+    border: 1px solid white;
+}
+label {
+    margin-bottom: 10px;
+}
+textarea {
+    width: 95%;
+    border-radius: 25px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+select, input {
+    padding: 5x;
+    margin-bottom: 10px;
+}
+input[type="submit"] {
+    background-color:  aqua;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+pre {
+    white-space: pre-wrap;
+    text-align: left;
+}
+h1 {
+    animation: slideIn 2s ease-in-out;
+    padding: 10px; /* Padding to provide some space around the text */
+    font-weight: bolder;
+    color: snow;
+}
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+h2 {
+    text-align: left;
+}

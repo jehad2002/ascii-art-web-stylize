@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ascii-art-stylize</title>
+    <link rel="stylesheet" href="style.css">
+    <body>
+         <h1> welcome to ascii art web </h1>
+         <section class="content">
+            <h2>About Us</h2>
+
+         <form action="/generate" method="post">
+            <label for="text">Enter the string </label>
+            <textarea name="text"  cols="50" rows="4" placeholder="enter the words..."></textarea>
+            <br>
+            <label for="font">choose a font:</tlabel><br>
+                  <input type="radio" id="standard" name="style" value="standard">
+                  <label for="standard">Standard</label><br>
+                  <input type="radio" id="shadow" name="style" value="shadow">
+                  <label for="shadow">Shadow</label><br>
+                  <input type="radio" id="thinkertoy" name="style " value="thinkertoy">
+                  <label for="thinkertoy">thinkertoy</label><br>                  
+                <br>
+                <input type="submit" value="Generate ASCII Art">
+         </form>
+    </body>
+</html>
