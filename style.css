@@ -134,3 +134,16 @@ h1 {
         transform: translateX(0);
     }
 }
+.about{
+    padding: 100px 200px;
+    color: white;
+    font-size: larger;
+    text-decoration: solid;
+    text-align: center;
+}
+.about .help{
+background-color:yellowgreen;
+
+
+
+}
