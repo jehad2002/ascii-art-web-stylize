@@ -1,46 +1,125 @@
 html {
-    background-image: url(BG4.jpg);
-    background-size: 100%;
-}
-body{
-    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("BG4.jpg");
     background-repeat: no-repeat;
-    text-align: center;
-    margin: 20px;
+    background-size: 100% ;
 }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
 form {
-    background-color: whitesmoke;
+    border-radius: 25px;
     display: inline-block;
     text-align: left;
-    padding: 25px;
-    border-radius: 90px;
-    border: 1px solid white;
+    background-color: #f0f0f0; /* Change to your desired background color */
+    padding: 20px; /* Adjust padding as needed */
 }
-label {
-    margin-bottom: 10px;
+
+
+h1 {
+    margin-top: 20px;
 }
+
+.content {
+    margin-top: 20px;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+}
+
 textarea {
-    width: 95%;
-    border-radius: 25px;
-    padding: 5px;
-    margin-bottom: 20px;
+    border-radius: 20px;
+    width: 100%;
+    margin-top: 5px;
+    resize: vertical;
 }
-select, input {
-    padding: 5x;
-    margin-bottom: 10px;
+
+label[for="font"] {
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
 }
 input[type="submit"] {
-    background-color:  aqua;
-    color: white;
-    padding: 15px 20px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: all 0.3s ease; /* Apply transition to all properties */
 }
-pre {
-    white-space: pre-wrap;
-    text-align: left;
+
+input[type="submit"]:hover {
+    background-color: black;
+    transform: scale(1.1); /* Increase size by 10% on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow effect */
 }
+
+/* Additional styling for better visual feedback */
+input[type="submit"]:active {
+    transform: translateY(1px); /* Add a slight downward shift when button is clicked */
+    box-shadow: none; /* Remove shadow when clicked */
+}
+
+
+.rating {
+    margin-top: 20px;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+.rating > span {
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+}
+
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+    content: "\2605";
+    position: absolute;
+    color: gold;
+}
+
+.rating > span:hover:before {
+    z-index: 1000;
+}
+
+.rating > input[type="radio"] {
+    display: none;
+}
+
+.rating > input[type="radio"]:checked ~ span:before {
+    content: "\2605";
+    position: absolute;
+    color: gold;
+}
+
+.button {
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: black;
+    transform: scale(1.1);
+}
+
+
 h1 {
     animation: slideIn 2s ease-in-out;
     padding: 10px; /* Padding to provide some space around the text */
@@ -54,7 +133,4 @@ h1 {
     to {
         transform: translateX(0);
     }
-}
-h2 {
-    text-align: left;
 }
