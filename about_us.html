@@ -11,33 +11,46 @@
         }
         header{
             background-color:skyblue;
-font-size: 50px;
+            font-size: 50px;
         }
         header .home{
             text-decoration: none;
             color: black;
         }
-        header :hover{
-color:blueviolet;
+        header:hover{
+            color:blueviolet;
         }
         section{
             padding: 100px 200px;
             font-size: 40px;
             background-color: aquamarine;
         }
+        /* Styling for the comment section */
+        .comment-section {
+            margin-top: 50px;
+        }
+        .comment-section textarea {
+            width: 100%;
+            height: 150px;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
     <header>
-     
-            <a href="index.html" class="home">Home</a>
-        
+        <a href="index.html" class="home">Home</a>
     </header>
     <section>
-        <h1>about us </h1>
-
-    <p>hello </p>
-</section>
-    
+        <h1>jehad was made this project</h1>
+        <p>hello whats ur comment about this project u can tell me if there's error or any thing to change it</p>
+        
+        <!-- Comment Section -->
+        <div class="comment-section">
+            <h2>Leave a Comment:</h2>
+            <textarea id="commentInput" placeholder="Write your comment here..."></textarea>
+            <button id="submitBtn">Submit</button>
+        </div>
+    </section>
 </body>
 </html>

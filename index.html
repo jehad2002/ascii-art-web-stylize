@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ascii-art-stylize</title>
+    <title>ASCII Art Web</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,35 +12,26 @@
         <form action="/generate" method="post">
             <label for="text">Enter the string:</label><br>
             <textarea name="text" cols="50" rows="4" placeholder="Enter the words..."></textarea><br>
-            <label for="font">Choose a font:</label><br>
-            <input type="radio" id="standard" name="style" value="standard">
+            <label>Choose a font:</label><br>
+            <input type="radio" name="font" id="standard" value="standard">
             <label for="standard">Standard</label><br>
-            <input type="radio" id="shadow" name="style" value="shadow">
+            
+            <input type="radio" name="font" id="shadow" value="shadow">
             <label for="shadow">Shadow</label><br>
-            <input type="radio" id="thinkertoy" name="style" value="thinkertoy">
+            
+            <input type="radio" name="font" id="thinkertoy" value="thinkertoy">
             <label for="thinkertoy">Thinkertoy</label><br>
-            <br>
+            
             <input type="submit" value="Generate ASCII Art">
         </form>
+    </section>          
+    <a href="about_us.html" class="button">About Us</a>
+    <section class="about">
+        <h1>How to Use</h1>
+        <h2>This project was made by Jehad Alami</h2>
+        <div class="help">
+            <p>ASCII Art Web is a website to generate ASCII art from any word. Simply type your word into the box, select a font, and click the "Generate ASCII Art" button to see the results. Have fun!</p>
+        </div>
     </section>
-
-    <!-- Rating button -->
-    <div class="rating">
-        <input type="radio" id="star5" name="rating" value="5"><span><label for="star5">☆</label></span>
-        <input type="radio" id="star4" name="rating" value="4"><span><label for="star4">☆</label></span>
-        <input type="radio" id="star3" name="rating" value="3"><span><label for="star3">☆</label></span>
-        <input type="radio" id="star2" name="rating" value="2"><span><label for="star2">☆</label></span>
-        <input type="radio" id="star1" name="rating" value="1"><span><label for="star1">☆</label></span>
-    </div>
-          <a href="about_us.html" class="button">About Us</a>
-          <section class="about">
-<h1>How to use </h1>
-<h2>this project was made by jehad alami</h2>
-<div class="help">
-<p> ASCII Art Web is a Website to Generate any word to asci art ,all you have to do is write anything in the box up and then use any font you like after that  click on Generate button to see the results ,that's it have fun  </p>
-</div>
-</section>
-          
-        
 </body>
 </html>
